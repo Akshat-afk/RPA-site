@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" data-theme = "dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-qvFfA2B4u/z97ngc0WbBrGqkWW76n2n4NHly5e5b+dj0M3Z5eY93eCvC1KFw5c52MhtAQ4BRZLHoQuQFFWfCqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>RPA Club</title>
+</head>
+<body>
+    <div id="preloader">
+        <video autoplay muted loop class="loading-video">
+            <source src="dtt frfr.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div id="main-content" class="hidden">
+
+        <header>
+            <h1>RPA Club</h1>
+            <p>Empowering Automation Enthusiasts</p>
+        </header>
+
+        <section>
+            <h2 >About Us</h2>
+            <p>Welcome to the Robotic Process Automation (RPA) Club! We are a community of automation enthusiasts dedicated
+                to exploring, learning, and advancing the field of RPA.</p>
+            <p>Join us on our journey to discover the exciting world of automation and how it can revolutionize various
+                industries.</p>
+            <a href="#join" class="cta-button">Join Us</a>
+        </section>
+
+        <section id="join">
+            <h2>Join the Club</h2>
+            <p>Ready to dive into the world of RPA? Join our club and connect with like-minded individuals who share a
+                passion for automation.</p>
+            <a href="#contact" class="cta-button">Contact Us</a>
+        </section>
+
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <div class="event">
+                <div class="event-info">
+                    <h3><a href="event1_details.html" target="_blank">Event 1</a></h3>
+                    <p>Date: January 20, 2024</p>
+                    <p>Location: Virtual</p>
+                </div>
+                <a href="event1_details.html" target="_blank"><img src="event1.jpg" alt="Event 1 Image"
+                        class="event-image"></a>
+            </div>
+            <div class="event">
+                <div class="event-info">
+                    <h3><a href="event2_details.html" target="_blank">Event 2</a></h3>
+                    <p>Date: February 5, 2024</p>
+                    <p>Location: TBD</p>
+                </div>
+                <a href="event2_details.html" target="_blank"><img src="event2.jpg" alt="Event 2 Image"
+                        class="event-image"></a>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 RPA Club. All rights reserved.</p>
+        </footer>
+    
+        <button id="theme-toggle" aria-label="Toggle Theme">🌞🌚</button>
+    </div>
+    <script src="theme.js"></script>
+    <script>
+        // JavaScript to handle preloader transition
+        window.addEventListener('load', function () {
+            var preloader = document.getElementById('preloader');
+            var mainContent = document.getElementById('main-content');
+
+            // Delay for 5 seconds (5000 milliseconds)
+            setTimeout(function () {
+                // Hide preloader and show main content
+                preloader.style.display = 'none';
+                mainContent.classList.remove('hidden');
+            }, 4000);
+        });
+    </script>
+</body>
+</html>
